@@ -1,0 +1,119 @@
+.margin-auto {
+  /*
+    0은 상하 여백을 0으로 설정하고, auto는 좌우 여백을 자동으로 설정하여 요소를 부모 요소 내에서 가로로 중앙 배치함.
+    auto 값을 사용하면 브라우저는 남은 공간을 균등하게 나누어 요소를 수평으로 중앙에 배치함.
+    이 방식은 주로 고정된 너비를 가진 블록 요소를 가로로 중앙에 배치할 때 사용함.
+  */
+  margin: 0 auto;
+}
+
+.header-wrap {
+  /*
+    레이아웃을 가로와 세로로 정렬하는 레이아웃 전용 속성값.
+    display: flex는 flex를 사용하기 위해 부모(container)에 첫 번째로 입력하는 속성값임.
+    display: flex; 만 사용해도 자식(item)은 가로로 정렬됨.
+  */
+  display: flex;
+  /*
+    부모(container) 공간에 자식(item)들을 가로정렬하고 배치하는 속성임.
+    flex-start: 부모 요소 안에서 자식 요소들이 왼쪽 정렬됨.
+    flex-end: 부모 요소 안에서 자식 요소들이 오른쪽 정렬됨.
+    center: 부모 요소 안에서 자식 요소들이 가운데 정렬됨.
+    space-between: 부모 요소 안에서 자식 요소들이 양끝 정렬됨.
+    space-around: 부모 요소 안에서 자식 요소들이 양끝에 여백을 두고 정렬됨.
+    space-evenly: 부모 요소 안에서 자식 요소들의 양끝 여백과 자식 간의 여백이 같게 정렬됨.
+  */
+  justify-content: space-between;
+  width: 1300px;
+}
+
+#logo-wrap {
+  width: 180px;
+  height: 100px;
+}
+
+/*
+  자손 선택자(한 칸 띄기)
+  부모 요소 아래의 자손 요소 전체를 선택할 때 사용함.
+  자식 선택자(>)
+  부모 요소 바로 아래의 자식 요소를 선택할 때 사용함.
+*/
+.logo-img > img {
+  /*
+    인라인 요소 또는 테이블 셀의 수직 정렬을 지정하는 데 사용함.
+    vertical-align: baseline | sub | super | top | text-top | middle | bottom | text-bottom | length | percentage;
+    middle: 요소의 중간을 부모 요소의 기준선 + 중간에 맞춰 정렬함.
+  */
+  vertical-align: middle;
+  padding-right: 16px;
+}
+
+.float-left {
+  /*
+    이미지 요소 옆에 텍스트를 자연스럽게 왼쪽 또는 오른쪽에 배치하는 속성.
+  */
+  float: left;
+}
+
+.logo-title {
+  font-size: 32px;
+  color: #ff9011;
+  font-weight: 700;
+}
+
+.gnb {
+  /*
+    레이아웃을 가로와 세로로 정렬하는 레이아웃 전용 속성값.
+    display: flex는 flex를 사용하기 위해 부모(container)에 첫 번째로 입력하는 속성값임.
+    display: flex; 만 사용해도 자식(item)은 가로로 정렬됨.
+  */
+  display: flex;
+  /*
+    부모(container) 공간에 자식(item)들을 가로정렬하고 배치하는 속성임.
+    flex-start: 부모 요소 안에서 자식 요소들이 왼쪽 정렬됨.
+    flex-end: 부모 요소 안에서 자식 요소들이 오른쪽 정렬됨.
+    center: 부모 요소 안에서 자식 요소들이 가운데 정렬됨.
+    space-between: 부모 요소 안에서 자식 요소들이 양끝 정렬됨.
+    space-around: 부모 요소 안에서 자식 요소들이 양끝에 여백을 두고 정렬됨.
+    space-evenly: 부모 요소 안에서 자식 요소들의 양끝 여백과 자식 간의 여백이 같게 정렬됨.
+  */
+  justify-content: flex-end;
+  /*
+    부모(container)의 수직축을 기준으로 내부의 자식(item) 요소들의 정렬과 간격을 표시하는 속성임.
+    stretch: 기본 속성값으로 부모의 높이만큼 자식의 높이를 늘림.
+    center: 부모 내부의 자식들이 수직으로 가운데 정렬됨.
+    flex-start: 부모 내부의 자식들이 위에서 아래로 정렬됨.
+    flex-end: 부모 내부의 자식들이 아래에서 위로 정렬됨.
+    baseline: 부모 안에서 자식들이 부모의 글자 베이스라인에 따라 정렬됨.
+  */
+  align-items: center;
+}
+
+#navi > li {
+  /*
+    display: inline-block; 속성은 웹사이트에 수평으로 정렬되어 있는 GNB 메뉴나 div 박스를 수평 정렬할 때 많이 사용됨.
+    inline: 수평 정렬하는 속성으로, HTML의 span 요소처럼 표시됨.
+    block: 수직 정렬하는 속성으로, HTML의 div 요소처럼 표시됨.
+    inline-block: HTML에서 수직으로 표시되는 block level 요소를 수평 정렬하는 속성.
+    none: HTML 요소를 숨김. 웹브라우저에서 보이지 않게 됨.
+    flex: 레이아웃을 가로와 세로로 정렬하는 레이아웃 전용 속성값.
+  */
+  display: inline-block;
+  text-align: center;
+  line-height: 100px;
+  margin: 0 20px;
+}
+
+#navi > li:hover {
+  /*
+    요소의 투명도를 설정. 값이 1이면 불투명, 0이면 완전히 투명.
+  */
+  opacity: 0.5;
+  text-decoration: underline;
+  /*
+    요소가 특정 상태로 변할 때의 애니메이션 효과를 설정함.
+    0.5s는 모든 속성의 변환이 0.5초 동안 부드럽게 이루어짐을 의미함.
+    마우스를 올렸을 때 opacity와 text-decoration의 변경이 0.5초 동안 부드럽게 적용됨.
+  */
+  transition: 0.5s;
+}

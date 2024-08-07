@@ -1,6 +1,9 @@
+import "./App.css";
 import { GlobalNavigationBar } from "./components/navigation/GlobalNavigationBar";
 import { Footer } from "./components/footer/Footer";
-import "./App.css";
+import { HomeBoard } from "./components/board/HomeBoard";
+import { Advertisement } from "./components/sidebar/Advertisement";
+import { GoToTop } from "./components/common/GoToTop";
 
 function App() {
   return (
@@ -8,37 +11,28 @@ function App() {
       <header>
         <GlobalNavigationBar />
       </header>
-      <body>
-        <h1>text text text text text</h1>
-        <h1>text text text text text</h1>
-        <h1>text text text text text</h1>
-        <h1>text text text text text</h1>
-        <h1>text text text text text</h1>
-        <h1>text text text text text</h1>
-        <h1>text text text text text</h1>
-        <h1>text text text text text</h1>
-        <h1>text text text text text</h1>
-        <h1>text text text text text</h1>
-        <h1>text text text text text</h1>
-        <h1>text text text text text</h1>
-        <h1>text text text text text</h1>
-        <h1>text text text text text</h1>
-        <h1>text text text text text</h1>
-        <h1>text text text text text</h1>
-        <h1>text text text text text</h1>
-        <h1>text text text text text</h1>
-        <h1>text text text text text</h1>
-        <h1>text text text text text</h1>
-        <h1>text text text text text</h1>
-        <h1>text text text text text</h1>
-        <h1>text text text text text</h1>
-        <h1>text text text text text</h1>
-        <h1>text text text text text</h1>
-        <h1>text text text text text</h1>
-      </body>
+      <main>
+        <div id="sidebar">
+          <Advertisement imgPath="/imgs/sidebar-advertisement_width180.png" />
+          <Advertisement imgPath="/imgs/sidebar-advertisement_width180.png" />
+        </div>
+        <div id="mainbody">
+          <HomeBoard title={"Q&A"} />
+          <HomeBoard title={"커뮤니티"} />
+          <HomeBoard title={"커뮤니티"} />
+          <HomeBoard title={"커뮤니티"} />
+          <HomeBoard title={"커뮤니티"} />
+          <HomeBoard title={"커뮤니티"} />
+        </div>
+        <div id="sidebar">
+          <Advertisement imgPath="/imgs/sidebar-advertisement_backend_bootcamp_87_width180.png" />
+          <Advertisement imgPath="/imgs/sidebar-advertisement_backend_bootcamp_87_width180.png" />
+        </div>
+      </main>
       <footer>
         <Footer />
       </footer>
+      <GoToTop />
     </>
   );
 }

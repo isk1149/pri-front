@@ -4,7 +4,7 @@ export const Footer = () => {
   return (
     <>
       <div className="margin-auto footer-wrap">
-        <img src="/imgs/logo60.png" alt="로고"></img>
+        <img src="/imgs/orange-logo_60px.png" alt="로고"></img>
         <div className="footer-adr">
           <h4>33GO</h4>
           <p>Copyright by ©thirtythreego All rights reserved</p>

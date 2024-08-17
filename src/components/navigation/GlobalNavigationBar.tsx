@@ -7,7 +7,7 @@ export const GlobalNavigationBar = () => {
         <div id="logo-wrap">
           <a href="/">
             <div className="logo-img float-left">
-              <img src="/imgs/logo60.png" alt="로고" />
+              <img src="/imgs/orange-logo_60px.png" alt="로고" />
             </div>
             <div className="logo-title">33GO</div>
           </a>
@@ -15,16 +15,24 @@ export const GlobalNavigationBar = () => {
         <nav className="gnb">
           <ul id="navi">
             <li>
-              <a href="#">메뉴1</a>
+              <a href="#">Q&A</a>
             </li>
             <li>
-              <a href="#">메뉴2</a>
+              <a href="#">커뮤니티</a>
             </li>
             <li>
-              <a href="#">메뉴3</a>
+              <a href="#">지식</a>
             </li>
             <li>
-              <a href="#">메뉴4</a>
+              <a href="#">공지사항</a>
+            </li>
+          </ul>
+          <ul id="navi">
+            <li>
+              <a href="#">로그인</a>
+            </li>
+            <li>
+              <a href="#">회원가입</a>
             </li>
           </ul>
         </nav>

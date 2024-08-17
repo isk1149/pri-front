@@ -19,10 +19,8 @@ function App() {
         <div id="mainbody">
           <HomeBoard title={"Q&A"} />
           <HomeBoard title={"커뮤니티"} />
-          <HomeBoard title={"커뮤니티"} />
-          <HomeBoard title={"커뮤니티"} />
-          <HomeBoard title={"커뮤니티"} />
-          <HomeBoard title={"커뮤니티"} />
+          <HomeBoard title={"지식"} />
+          <HomeBoard title={"공지사항"} />
         </div>
         <div id="sidebar">
           <Advertisement imgPath="/imgs/sidebar-advertisement_backend_bootcamp_87_width180.png" />

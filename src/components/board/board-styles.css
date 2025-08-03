@@ -1,56 +1,57 @@
-.home-board {
-  width: 400px;
-  height: 370px;
-  /*border: 1px solid black;*/
+.board {
+  width: 840px;
+  height: auto;
+  border: 1px solid black;
 }
 
-.home-board-title {
-  width: 400px;
-  border: 1px solid gray;
-  /*border-radius: 5%;*/
+.board table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.board th {
   height: 50px;
-  padding-left: 15px;
-  line-height: 50px;
+  background-color: #f9f9f9;
+}
+.board-th-title {
+  width: 500px;
+}
+.board-th-writer {
+  width: 85px;
+}
+.board-th-writing-date {
+  width: 85px;
+}
+.board-th-view-count {
+  width: 85px;
+}
+.board-th-recommendation-count {
+  width: 85px;
 }
 
-.home-board-title > h2 {
-  font-size: 20px;
-}
-
-.home-board-post {
-  width: 400px;
-  height: 80px;
+.board td {
+  height: 40px;
   border-bottom: 1px solid lightgray;
-  padding-left: 5px;
-  padding-right: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  font-size: 14px;
+  /* padding-left: 5px; */
 }
-
-.home-board-post-info {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 4px;
+.board-td-title {
+  width: 500px;
+  padding-left: 20px;
 }
-
-.home-board-post-info-span-id-margin {
-  margin-right: 10px;
+.board-td-writer {
+  width: 85px;
+  text-align: center;
 }
-
-.home-board-post-info-span-view-count-margin {
-  margin-right: 10px;
+.board-td-writing-date {
+  width: 85px;
+  text-align: center;
 }
-
-.home-board-post-info-span-comment-count-margin {
-  margin-left: 10px;
+.board-td-view-count {
+  width: 85px;
+  text-align: center;
 }
-
-.home-board-post-info > span > img {
-  vertical-align: middle;
-  margin-right: 2px;
-}
-
-.home-board-post-title > h3 {
-  font-size: 18px;
+.board-td-recommendation-count {
+  width: 85px;
+  text-align: center;
 }

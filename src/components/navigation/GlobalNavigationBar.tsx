@@ -15,6 +15,9 @@ export const GlobalNavigationBar = () => {
         <nav className="gnb">
           <ul id="navi">
             <li>
+              <a href="#">공지사항</a>
+            </li>
+            <li>
               <a href="#">Q&A</a>
             </li>
             <li>
@@ -22,9 +25,6 @@ export const GlobalNavigationBar = () => {
             </li>
             <li>
               <a href="#">지식</a>
-            </li>
-            <li>
-              <a href="#">공지사항</a>
             </li>
           </ul>
           <ul id="navi">

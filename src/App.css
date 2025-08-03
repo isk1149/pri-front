@@ -103,7 +103,7 @@ ul li {
   padding: 20px 30px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 40px;
+  grid-gap: 40px; /*TO DO LIST*/
   /*border: 1px solid #000000;*/
 }
 
